@@ -6,3 +6,4 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT01: Setup of SourceTree and Unreall engine Project
 * BT02: Game Design Document (GDD)
 * BT03: Seting up in GitHub "repo"
+* BT04: Seting up Unreal Engine Project files
