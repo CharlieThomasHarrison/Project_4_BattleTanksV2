@@ -7,3 +7,4 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT02: Game Design Document (GDD)
 * BT03: Seting up in GitHub "repo"
 * BT04: Seting up Unreal Engine Project files
+* BT05: Version 1 of the game terrain 
