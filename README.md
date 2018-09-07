@@ -13,3 +13,4 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT08: V1 implment of spring arm camera and X & Y Camera controls/ V1 Default gamemode: free-for-all
 * BT09: Camera V2: Changes and improvements to spring arm & added scene root
 * BT10: Created a Aiming UI & updated Gamemode
+* BT11: UI V1: Created basic meanmenu and fading background with minmal fuction
