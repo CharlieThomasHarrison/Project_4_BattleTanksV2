@@ -10,3 +10,4 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT05: Version 1 of the game terrain 
 * BT06: Terrein Texture V1 applied Terrien made V1
 * BT07: Import of Tank mesh and contruction of the Tank BluePrint
+* BT08: V1 implment of spring arm camera and X & Y Camera controls/ V1 Default gamemode: free-for-all
