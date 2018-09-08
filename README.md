@@ -14,3 +14,4 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT09: Camera V2: Changes and improvements to spring arm & added scene root
 * BT10: Created a Aiming UI & updated Gamemode
 * BT11: UI V1: Created basic meanmenu and fading background with minmal fuction
+* BT12: UI V1.1: Finshed first pass at Meanmenu (Font, changeing buttons/backgrounds and interative buttons)
