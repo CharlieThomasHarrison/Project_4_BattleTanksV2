@@ -25,4 +25,8 @@ public:
 
 	// Start the tank barrle moveing so that it can shoot at the crosshair
 	void AimTowardsCrossHair();
+
+private:
+
+	bool GetSightRayHitLocation(FVector& OutHitLoaction) const;
 };

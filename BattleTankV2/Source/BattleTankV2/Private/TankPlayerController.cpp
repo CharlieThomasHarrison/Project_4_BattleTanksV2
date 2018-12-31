@@ -4,8 +4,8 @@
 
 void ATankPlayerController::Tick(float DeltaTime)
 {
-	AimTowardsCrossHair();
 	Super::Tick(DeltaTime);
+	AimTowardsCrossHair();
 	
 }
 
@@ -33,8 +33,18 @@ void ATankPlayerController::AimTowardsCrossHair()
 {
 	if (!GetControlledTank()) { return; }
 
-	// Get world location through Crosshair 
-	// If it hits Landscape
-		// Tell Controlled Tank to aim at this point
+	FVector HitLocation; // Out parameter 
+	if (GetSightRayHitLocation(HitLocation)) // Has "Side-effect" id going to Raytrace 
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Hitlocation: %s"), *HitLocation.ToString());
+		// TODO Tell Controlled Tank to aim at this point
+	}
+}
+
+// Get world location of Raytrace through Crosshair, true if hit landscape
+bool ATankPlayerController::GetSightRayHitLocation(FVector& OutHitLoaction) const
+{
+	OutHitLoaction = FVector(1.0);
+	return true;
 }
 
