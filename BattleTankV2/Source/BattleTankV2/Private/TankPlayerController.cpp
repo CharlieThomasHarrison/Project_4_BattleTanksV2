@@ -44,7 +44,13 @@ void ATankPlayerController::AimTowardsCrossHair()
 // Get world location of Raytrace through Crosshair, true if hit landscape
 bool ATankPlayerController::GetSightRayHitLocation(FVector& OutHitLoaction) const
 {
-	OutHitLoaction = FVector(1.0);
+	// Find the crosshair position in pixal cordaintes 
+	int32 ViewportSizeX, ViewportSizeY;
+	GetViewportSize(ViewportSizeX, ViewportSizeY);
+	auto ScreenLocation = FVector2D (ViewportSizeX * CrossHairXLoaction, ViewportSizeY * CrossHairYLoaction);
+	
+	// "De-Project" the screen position pof the crosshair to a world direction
+	// RayTrace along that look direction, and see whats is hit (limted range)
 	return true;
 }
 

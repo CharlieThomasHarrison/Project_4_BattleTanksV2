@@ -16,7 +16,14 @@ class BATTLETANKV2_API ATankPlayerController : public APlayerController
 	GENERATED_BODY()
 	
 public:
+	//Varables
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Interface")
+	float CrossHairXLoaction = 0.5;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Interface")
+	float CrossHairYLoaction = 0.333;
+
+	//Fuctions
 	virtual void BeginPlay() override;
 	
 	virtual void Tick(float DeltaTime) override;
@@ -28,5 +35,6 @@ public:
 
 private:
 
+	//Fuctions
 	bool GetSightRayHitLocation(FVector& OutHitLoaction) const;
 };
