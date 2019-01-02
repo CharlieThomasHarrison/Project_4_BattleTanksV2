@@ -37,4 +37,6 @@ private:
 
 	//Fuctions
 	bool GetSightRayHitLocation(FVector& OutHitLoaction) const;
+
+	bool GetLookDiration(FVector2D ScreenLocation, FVector& LookDiraction) const;
 };
