@@ -15,3 +15,10 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT10: Created a Aiming UI & updated Gamemode
 * BT11: UI V1: Created basic meanmenu and fading background with minmal fuction
 * BT12: UI V1.1: Finshed first pass at Meanmenu (Font, changeing buttons/backgrounds and interative buttons)
+* BT13: Switch over core class to custume C++ code
+* BT14: Make a AIController for tanks placed in worlf and find the players Pawn print to console
+* BT15: Event Tick added to C++ PlayerController begining work stared on Aiming the Tank class at UI crosshair
+* BT16: GetSightRayHitLocation consturcted
+* BT17: C++ Crosshair location in pixel found and printed to log
+* BT18: Forward diraction found and printed to log
+* BT19: 

@@ -5,6 +5,7 @@
 #include "Tank.h"
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
+#include "Engine.h"
 #include "TankPlayerController.generated.h" // Must be the last item loaded
 
 /**
@@ -23,6 +24,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Interface")
 	float CrossHairYLoaction = 0.333;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "RayTracing")
+	float LineTraceRange = 1000000;
+
 	//Fuctions
 	virtual void BeginPlay() override;
 	
@@ -36,7 +40,9 @@ public:
 private:
 
 	//Fuctions
-	bool GetSightRayHitLocation(FVector& OutHitLoaction) const;
+	bool GetSightRayHitLocation(FVector& HitLoaction) const;
 
 	bool GetLookDiration(FVector2D ScreenLocation, FVector& LookDiraction) const;
+
+	bool GetLookVectorHitLocation(FVector LookDiraction, FVector& HitLocation) const;
 };
