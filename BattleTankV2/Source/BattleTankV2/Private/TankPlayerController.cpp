@@ -36,8 +36,7 @@ void ATankPlayerController::AimTowardsCrossHair()
 	FVector HitLocation; // Out parameter 
 	if (GetSightRayHitLocation(HitLocation)) // Has "Side-effect" id going to Raytrace 
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Hitlocation: %s"), *HitLocation.ToString());
-		// TODO Tell Controlled Tank to aim at this point
+		GetControlledTank()->AimAt(HitLocation);
 	}
 }
 

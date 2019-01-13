@@ -17,6 +17,20 @@ void ATankAIController::BeginPlay()
 	}
 }
 
+void ATankAIController::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+	if (GetPlayerTank())
+	{
+		// TODO move towards the player
+
+		// TODO Aim at the player
+		GetControlledTank()->AimAt(GetPlayerTank()->GetActorLocation());
+
+		// TODO Fire if ready
+	}
+}
+
 ATank* ATankAIController::GetControlledTank() const
 {
 	return Cast<ATank>(GetPawn());

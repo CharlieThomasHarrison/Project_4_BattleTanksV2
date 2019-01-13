@@ -21,4 +21,5 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT16: GetSightRayHitLocation consturcted
 * BT17: C++ Crosshair location in pixel found and printed to log
 * BT18: Forward diraction found and printed to log
-* BT19: 
+* BT19: Raytraceing and print to log location hit
+* BT20: Add AimAt fuction to Tank pawn for player/AI
