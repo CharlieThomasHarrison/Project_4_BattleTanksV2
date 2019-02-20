@@ -24,3 +24,4 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT19: Raytraceing and print to log location hit
 * BT20: Add AimAt fuction to Tank pawn for player/AI
 * BT21: AimingComponent Added to Tank BP thorugh C++ and all items todo with aiming moveing to this Component
+* BT22: Soft codeing of the barrel reference and well as print to log location of attached barral to its owner tank
