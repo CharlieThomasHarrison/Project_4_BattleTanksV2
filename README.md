@@ -26,3 +26,4 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT21: AimingComponent Added to Tank BP thorugh C++ and all items todo with aiming moveing to this Component
 * BT22: Soft codeing of the barrel reference and well as print to log location of attached barral to its owner tank
 * BT23: Lunch speed of tank cannon avaible in blueprint and printed out to log 
+* BT24: SuggestProjectileVelocity implermented into code and socket add to barrel mode 

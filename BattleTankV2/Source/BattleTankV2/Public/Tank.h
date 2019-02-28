@@ -19,7 +19,7 @@ public:
 	void SetBarrelReference(UStaticMeshComponent* BarrelToSet);
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Fireing")
-	float LunchSpeed = 100000; // Sensible staring value of 1000 m/s
+	float LunchSpeed = 100000; // TODO Find Sensible Default
 
 protected:
 	// Called when the game starts or when spawned
