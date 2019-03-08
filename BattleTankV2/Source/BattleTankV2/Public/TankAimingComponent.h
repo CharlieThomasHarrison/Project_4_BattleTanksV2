@@ -8,9 +8,10 @@
 #include "Components/StaticMeshComponent.h"
 #include "TankAimingComponent.generated.h"
 
-class UTankBarrel; // Forward Declaration
+// Forward Declaration
+class UTankBarrel;
 
-
+// Hold barrel's properties and Elvate method
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class BATTLETANKV2_API UTankAimingComponent : public UActorComponent
 {

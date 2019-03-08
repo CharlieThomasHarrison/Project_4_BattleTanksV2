@@ -29,3 +29,4 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT24: SuggestProjectileVelocity implermented into code and socket add to barrel mode
 * BT25: TankAimComponent printing to log the corret FRotator for aiming the tank barrel 
 * BT26: Cration of the TankBarrel c++ class and conversion of other class to use TankBarrel
+* BT27: Min/Max Elevation vaules add to barrel in-engine for easy of use
