@@ -28,3 +28,4 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT23: Lunch speed of tank cannon avaible in blueprint and printed out to log 
 * BT24: SuggestProjectileVelocity implermented into code and socket add to barrel mode
 * BT25: TankAimComponent printing to log the corret FRotator for aiming the tank barrel 
+* BT26: Cration of the TankBarrel c++ class and conversion of other class to use TankBarrel

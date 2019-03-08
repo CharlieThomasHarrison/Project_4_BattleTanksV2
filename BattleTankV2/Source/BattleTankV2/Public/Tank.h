@@ -7,6 +7,8 @@
 #include "GameFramework/Pawn.h"
 #include "Tank.generated.h" // Put new incules above
 
+class UTankBarrel;
+
 UCLASS()
 class BATTLETANKV2_API ATank : public APawn
 {
@@ -16,7 +18,7 @@ public:
 	void AimAt(FVector HitLocation);
 
 	UFUNCTION(BlueprintCallable, Category = Setup)
-	void SetBarrelReference(UStaticMeshComponent* BarrelToSet);
+	void SetBarrelReference(UTankBarrel* BarrelToSet);
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Fireing")
 	float LunchSpeed = 100000; // TODO Find Sensible Default
