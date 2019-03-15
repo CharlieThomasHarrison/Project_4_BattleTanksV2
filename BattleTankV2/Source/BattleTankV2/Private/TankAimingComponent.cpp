@@ -50,6 +50,9 @@ void UTankAimingComponent::AimAt(FVector HitLocation, float LunchSpeed)
 		StartLocation,
 		HitLocation,
 		LunchSpeed,
+		false,
+		0,
+		0,
 		ESuggestProjVelocityTraceOption::DoNotTrace
 	);
 	if (BHaveAimSolution)

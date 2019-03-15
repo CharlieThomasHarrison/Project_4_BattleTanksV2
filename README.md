@@ -31,3 +31,4 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT26: Cration of the TankBarrel c++ class and conversion of other class to use TankBarrel
 * BT27: Min/Max Elevation vaules add to barrel in-engine for easy of use
 * BT28: turn off ticks on certin tank C++ classes also log out bug involeing Aim Soltion not being found
+* BT29: move header file metions to forward declaration
