@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Components/StaticMeshComponent.h"
 #include "Engine.h"
+#include "Kismet/KismetMathLibrary.h"
 #include "TankBarrel.generated.h"
 
 /**
@@ -14,6 +15,9 @@ UCLASS(meta = (BlueprintSpawnableComponent), hidecategories = ("Coillision"))
 class BATTLETANKV2_API UTankBarrel : public UStaticMeshComponent
 {
 	GENERATED_BODY()
+
+	//Fuctions
+	virtual void BeginPlay() override;
 	
 public:
 	// -1 is max downward speed, and 1+ is max up movement
@@ -21,11 +25,11 @@ public:
 	
 private:
 	UPROPERTY(EditAnywhere, Category = Setup)
-	float MaxDegreePerSecond = 20; 
+	float MaxDegreePerSecond = 5; 
 
 	UPROPERTY(EditAnywhere, Category = Setup)
 	float MinElevationDegrees = 0; 
 
 	UPROPERTY(EditAnywhere, Category = Setup)
-	float MaxElevationDegrees = 25; 
+	float MaxElevationDegrees = 40; 
 };
