@@ -35,4 +35,5 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT30: Clamp used to limit vaules to allow barrel to move up and down 
 * BT31: My creation of the Tank Turret Roation code 
 * BT32: final Commit of turret Roation cleaned up code and chnage tick on TankAimingComponent
+* BT33: Added Projectile C++ class and fireing abilty to Tank C++ classs resulting in print to log 
 

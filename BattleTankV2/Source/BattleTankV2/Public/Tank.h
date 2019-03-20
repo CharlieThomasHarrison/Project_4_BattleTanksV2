@@ -3,6 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Kismet/GameplayStatics.h"
+#include "Engine.h"
 #include "GameFramework/Pawn.h"
 #include "Tank.generated.h" // Put new incules above
 
@@ -40,5 +42,8 @@ private:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	UFUNCTION(BlueprintCallable, Category = Setup)
+	void Fire();
 
 };
