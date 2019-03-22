@@ -45,7 +45,7 @@ void UTankAimingComponent::TickComponent(float DeltaTime, ELevelTick TickType, F
 	// ...
 }
 
-void UTankAimingComponent::AimAt(FVector HitLocation, float LunchSpeed)
+void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed)
 {
 	if (!Barrel) { return; }
 
@@ -57,7 +57,7 @@ void UTankAimingComponent::AimAt(FVector HitLocation, float LunchSpeed)
 		OutLaunchVelocity,
 		StartLocation,
 		HitLocation,
-		LunchSpeed,
+		LaunchSpeed,
 		false,
 		0,
 		0,

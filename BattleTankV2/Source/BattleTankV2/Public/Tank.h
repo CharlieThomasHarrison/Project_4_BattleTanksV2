@@ -29,7 +29,7 @@ public:
 	void SetTurretReference(UTankTurret* TurretToSet);
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Fireing")
-	float LunchSpeed = 100000; // TODO Find Sensible Default
+	float LaunchSpeed = 100000; // TODO Find Sensible Default
 
 protected:
 	// Called when the game starts or when spawned
