@@ -29,7 +29,13 @@ public:
 	void SetTurretReference(UTankTurret* TurretToSet);
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Fireing")
-	float LaunchSpeed = 100000; // TODO Find Sensible Default
+	float LaunchSpeed = 10000;
+
+	UFUNCTION(BlueprintCallable, Category = Setup)
+	void Fire();
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Fireing")
+	bool CanTankFire = true;
 
 protected:
 	// Called when the game starts or when spawned
@@ -44,13 +50,15 @@ private:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	UFUNCTION(BlueprintCallable, Category = Setup)
-	void Fire();
 
 	UPROPERTY(EditAnywhere, Category = Setup)
 	TSubclassOf<AProjectile> ProjectileBluePrint;
 
 	// Local Barrel reference for spawning projectile
 	UTankBarrel* Barrel = nullptr;
+
+	float ReloadTimeInSeconds = 3;
+	
+	double LastFireTime = 0;
 
 };
