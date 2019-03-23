@@ -20,13 +20,13 @@ class BATTLETANKV2_API ATankPlayerController : public APlayerController
 	
 public:
 	//Varables
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Interface")
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Interface")
 	float CrossHairXLoaction = 0.5;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Interface")
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Interface")
 	float CrossHairYLoaction = 0.333;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "RayTracing")
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "RayTracing")
 	float LineTraceRange = 1000000;
 
 	//Fuctions

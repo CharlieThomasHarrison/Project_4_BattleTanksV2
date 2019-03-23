@@ -28,13 +28,13 @@ public:
 	UFUNCTION(BlueprintCallable, Category = Setup)
 	void SetTurretReference(UTankTurret* TurretToSet);
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Fireing")
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = Fireing)
 	float LaunchSpeed = 10000;
 
 	UFUNCTION(BlueprintCallable, Category = Setup)
 	void Fire();
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Fireing")
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = Fireing)
 	bool CanTankFire = true;
 
 protected:
@@ -50,13 +50,13 @@ private:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-
-	UPROPERTY(EditAnywhere, Category = Setup)
+	UPROPERTY(EditDefaultsOnly, Category = Setup)
 	TSubclassOf<AProjectile> ProjectileBluePrint;
 
 	// Local Barrel reference for spawning projectile
 	UTankBarrel* Barrel = nullptr;
 
+	UPROPERTY(EditDefaultsOnly, Category = Fireing)
 	float ReloadTimeInSeconds = 3;
 	
 	double LastFireTime = 0;
