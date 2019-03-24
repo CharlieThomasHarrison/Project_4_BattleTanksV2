@@ -34,7 +34,7 @@ public:
 	UFUNCTION(BlueprintCallable, Category = Setup)
 	void Fire();
 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = Fireing)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Fireing)
 	bool CanTankFire = true;
 
 protected:
