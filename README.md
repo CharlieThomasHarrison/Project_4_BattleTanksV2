@@ -47,3 +47,4 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT39: Setup Track Throttles made TankTrack C++ class and added it TankBP/ Printed out to log Player controller input
 
 * BT40: ApplyForceAtLocation() in Action added Force to the loction of Each track allowing tank to move but cant as friction in game is to high
+* BT41: Physics Materials & Friction Added Movment to tanks through Left & Right tracks aswell as added a phys Material for tracks
