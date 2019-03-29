@@ -48,3 +48,7 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 
 * BT40: ApplyForceAtLocation() in Action added Force to the loction of Each track allowing tank to move but cant as friction in game is to high
 * BT41: Physics Materials & Friction Added Movment to tanks through Left & Right tracks aswell as added a phys Material for tracks
+* BT42: TankMovementComponent C++ class added
+* BT43: Using BlueprintReadOnly conneting Input with intend forward movement fuction
+
+* BT44: A Better Component Architecture added extra controll to the tank with num keys to allow forward/backward movment through one key
