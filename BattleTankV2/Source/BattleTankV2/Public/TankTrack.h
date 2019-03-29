@@ -4,7 +4,6 @@
 
 #include "CoreMinimal.h"
 #include "Components/StaticMeshComponent.h"
-#include "Engine/World.h"
 #include "TankTrack.generated.h"
 
 /**

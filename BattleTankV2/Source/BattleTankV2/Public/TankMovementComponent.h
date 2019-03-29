@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/NavMovementComponent.h"
+#include "Engine/World.h"
 #include "TankMovementComponent.generated.h"
 
 /**
@@ -13,8 +14,11 @@ UCLASS()
 class BATTLETANKV2_API UTankMovementComponent : public UNavMovementComponent
 {
 	GENERATED_BODY()
-	
-	
+
+public:
+
+	UFUNCTION(BlueprintCallable, Category = Input)
+	void IntendMoveForward(float Throw);
 	
 	
 };
