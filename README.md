@@ -52,3 +52,4 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT43: Using BlueprintReadOnly conneting Input with intend forward movement fuction
 
 * BT44: A Better Component Architecture added extra controll to the tank with num keys to allow forward/backward movment through one key
+* BT45: Completing Manual Tank Movement added left and right turn to tank controlles throught tankmovementComponent
