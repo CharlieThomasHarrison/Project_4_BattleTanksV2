@@ -55,3 +55,4 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT45: Completing Manual Tank Movement added left and right turn to tank controlles throught tankmovementComponent
 * BT46: Added Navi mesh to landscape
 * BT47: Dissecting RequestDirectMove() Print to log where the AI Tanks are trying to reach to hit the player 
+* BT48: CrossProduct() Vector Operator AITanks now move
