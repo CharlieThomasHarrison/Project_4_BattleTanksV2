@@ -54,3 +54,4 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT44: A Better Component Architecture added extra controll to the tank with num keys to allow forward/backward movment through one key
 * BT45: Completing Manual Tank Movement added left and right turn to tank controlles throught tankmovementComponent
 * BT46: Added Navi mesh to landscape
+* BT47: Dissecting RequestDirectMove() Print to log where the AI Tanks are trying to reach to hit the player 
