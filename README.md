@@ -56,3 +56,4 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT46: Added Navi mesh to landscape
 * BT47: Dissecting RequestDirectMove() Print to log where the AI Tanks are trying to reach to hit the player 
 * BT48: CrossProduct() Vector Operator AITanks now move
+* BT49: Finalising Your Class Code Moveing tanks added to the game 
