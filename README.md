@@ -38,22 +38,18 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT33: Added Projectile C++ class and fireing abilty to Tank C++ classs resulting in print to log 
 * BT34: Basic spawning of projectile at the end of Barrel
 * BT35: Projectile Movement Components added to projectile class/BP and Tank now fireing Projectile at launch speed
-
 * BT36: Makeing AI Tanks fire added Fireing to all tanks aswell as reload timer and can fire bool
-
 * BT37: EditAnywhere vs EditDefaultsOnly Chnaged over code from EditAnywhere to EditDefaultsonly as default
 * BT38: Removed collision from Barrel & Turret and added new box collision To TankBP
-
 * BT39: Setup Track Throttles made TankTrack C++ class and added it TankBP/ Printed out to log Player controller input
-
 * BT40: ApplyForceAtLocation() in Action added Force to the loction of Each track allowing tank to move but cant as friction in game is to high
 * BT41: Physics Materials & Friction Added Movment to tanks through Left & Right tracks aswell as added a phys Material for tracks
 * BT42: TankMovementComponent C++ class added
 * BT43: Using BlueprintReadOnly conneting Input with intend forward movement fuction
-
 * BT44: A Better Component Architecture added extra controll to the tank with num keys to allow forward/backward movment through one key
 * BT45: Completing Manual Tank Movement added left and right turn to tank controlles throught tankmovementComponent
 * BT46: Added Navi mesh to landscape
 * BT47: Dissecting RequestDirectMove() Print to log where the AI Tanks are trying to reach to hit the player 
 * BT48: CrossProduct() Vector Operator AITanks now move
 * BT49: Finalising Your Class Code Moveing tanks added to the game 
+* BT50: Finalising Your Class Code Cleaning TankMovementComponent of TODO

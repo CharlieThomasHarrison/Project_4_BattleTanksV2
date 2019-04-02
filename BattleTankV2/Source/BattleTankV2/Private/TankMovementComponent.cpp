@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// CopyRight Maximum LTD.
 
 #include "TankMovementComponent.h"
 #include "TankTrack.h"
@@ -21,7 +21,6 @@ void UTankMovementComponent::RequestDirectMove(const FVector& MoveVelocity, bool
 
 	auto RightThrow = FVector::CrossProduct(TankForward, AIForwardIntention).Z;
 	IntendTurnRight(RightThrow);
-
 }
 
 void UTankMovementComponent::IntendMoveForward(float Throw)
@@ -29,7 +28,6 @@ void UTankMovementComponent::IntendMoveForward(float Throw)
 	if (!LeftTrack || !RightTrack) { return; }
 	LeftTrack->SetThrottle(Throw);
 	RightTrack->SetThrottle(Throw);
-	// TODO Prevent double-speed due to dual control use
 }
 
 void UTankMovementComponent::IntendTurnRight(float Throw)
@@ -37,7 +35,6 @@ void UTankMovementComponent::IntendTurnRight(float Throw)
 	if (!LeftTrack || !RightTrack) { return; }
 	LeftTrack->SetThrottle(Throw);
 	RightTrack->SetThrottle(-Throw);
-	// TODO Prevent double-speed due to dual control use
 }
 
 void UTankMovementComponent::IntendTurnLeft(float Throw)
@@ -45,6 +42,5 @@ void UTankMovementComponent::IntendTurnLeft(float Throw)
 	if (!LeftTrack || !RightTrack) { return; }
 	LeftTrack->SetThrottle(-Throw);
 	RightTrack->SetThrottle(Throw);
-	// TODO Prevent double-speed due to dual control use
 }
 
