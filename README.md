@@ -53,3 +53,4 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT48: CrossProduct() Vector Operator AITanks now move
 * BT49: Finalising Your Class Code Moveing tanks added to the game 
 * BT50: Finalising Your Class Code Cleaning TankMovementComponent of TODO
+* BT51: How to Use Blueprint Variables added fuction to cross hair colour

@@ -17,6 +17,10 @@ UCLASS()
 class BATTLETANKV2_API ATankPlayerController : public APlayerController
 {
 	GENERATED_BODY()
+
+protected:
+	UFUNCTION(BlueprintCallable, Category = "Setup")
+	ATank* GetControlledTank() const;
 	
 public:
 	//Varables
@@ -30,11 +34,10 @@ public:
 	float LineTraceRange = 1000000;
 
 	//Fuctions
+
 	virtual void BeginPlay() override;
 	
 	virtual void Tick(float DeltaTime) override;
-
-	ATank* GetControlledTank() const;
 
 	// Start the tank barrle moveing so that it can shoot at the crosshair
 	void AimTowardsCrossHair();
