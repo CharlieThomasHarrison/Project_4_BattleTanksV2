@@ -6,6 +6,15 @@
 #include "Kismet/GameplayStatics.h"
 #include "TankAimingComponent.generated.h"
 
+// Enum For aiming state
+UENUM()
+enum class EFireingState : uint8
+{
+	Reloading,
+	Amining, 
+	Locked
+};
+
 // Forward Declaration
 class UTankBarrel;
 class UTankTurret;
@@ -33,10 +42,15 @@ protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
+	UPROPERTY(BlueprintReadOnly, Category = "State")
+	EFireingState FireingState = EFireingState::Reloading;
+
 private:
 	UTankBarrel* Barrel = nullptr;
 
 	UTankTurret* Turret = nullptr;
-	
+
 	void MoveBarrelTowards(FVector AimDirection);
+
+
 };
