@@ -36,7 +36,7 @@ public:
 
 protected:
 	UPROPERTY(BlueprintReadOnly, Category = "State")
-	EFireingState FireingState = EFireingState::Reloading;
+	EFireingState FireingState = EFireingState::Amining;
 
 private:
 	void MoveBarrelTowards(FVector AimDirection);

@@ -57,3 +57,4 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT52: Using Enum(erations) in UE4 colour ENUM added to UI blueprint to change the aiming dot
 * BT53: Refactoring our Aiming Component **HARD CRASHES ON PLAY**
 * BT54: Attaching a Debugger to Unreal Resovled crashing with a protected pointer to TankAmingConponenet
+* BT55: Decoupling Your Architecture 
