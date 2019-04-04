@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// CopyRight Maximum LTD.
 
 #pragma once
 
@@ -23,24 +23,16 @@ class BATTLETANKV2_API ATank : public APawn
 public:
 	void AimAt(FVector HitLocation);
 
-	UFUNCTION(BlueprintCallable, Category = Setup)
-	void SetBarrelReference(UTankBarrel* BarrelToSet);
-
-	UFUNCTION(BlueprintCallable, Category = Setup)
-	void SetTurretReference(UTankTurret* TurretToSet);
-
-	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = Fireing)
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Fireing")
 	float LaunchSpeed = 10000;
 
-	UFUNCTION(BlueprintCallable, Category = Setup)
+	UFUNCTION(BlueprintCallable, Category = "Setup")
 	void Fire();
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Fireing)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Fireing")
 	bool CanTankFire = true;
 
 protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
 	
 	UPROPERTY(BlueprintReadOnly)
 	UTankAimingComponent* TankAimingComponent = nullptr;
@@ -52,17 +44,14 @@ private:
 	// Sets default values for this pawn's properties
 	ATank();
 
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
-	UPROPERTY(EditDefaultsOnly, Category = Setup)
+	UPROPERTY(EditDefaultsOnly, Category = "Setup")
 	TSubclassOf<AProjectile> ProjectileBluePrint;
 
-	// Local Barrel reference for spawning projectile
-	UTankBarrel* Barrel = nullptr;
-
-	UPROPERTY(EditDefaultsOnly, Category = Fireing)
+	UPROPERTY(EditDefaultsOnly, Category = "Fireing")
 	float ReloadTimeInSeconds = 3;
+
+	// Local Barrel reference for spawning projectile
+	UTankBarrel* Barrel = nullptr; //TODO remove
 	
 	double LastFireTime = 0;
 
