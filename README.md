@@ -58,3 +58,4 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT53: Refactoring our Aiming Component **HARD CRASHES ON PLAY**
 * BT54: Attaching a Debugger to Unreal Resovled crashing with a protected pointer to TankAmingConponenet
 * BT55: Decoupling Your Architecture 
+* BT56: BlueprintImplementableEvent Changed UI to be buillt from BP fuction from the c++ class
