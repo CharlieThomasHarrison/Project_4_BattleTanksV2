@@ -59,3 +59,4 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT54: Attaching a Debugger to Unreal Resovled crashing with a protected pointer to TankAmingConponenet
 * BT55: Decoupling Your Architecture 
 * BT56: BlueprintImplementableEvent Changed UI to be buillt from BP fuction from the c++ class
+* BT57: Using the ensure Assertion added ensure to key points in code to see insight to failing code

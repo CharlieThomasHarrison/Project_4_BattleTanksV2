@@ -14,7 +14,7 @@ void ATankPlayerController::BeginPlay()
 {
 	Super::BeginPlay();
 	auto AmingComponent = GetControlledTank()->FindComponentByClass<UTankAimingComponent>();
-	if (AmingComponent)
+	if (ensure(AmingComponent))
 	{
 		FoundAimingComponent(AmingComponent);
 	}
@@ -31,7 +31,7 @@ ATank* ATankPlayerController::GetControlledTank() const
 
 void ATankPlayerController::AimTowardsCrossHair()
 {
-	if (!GetControlledTank()) { return; }
+	if (!ensure(GetControlledTank())) { return; }
 
 	FVector HitLocation; // Out parameter 
 	if (GetSightRayHitLocation(HitLocation)) // Has "Side-effect" id going to Raytrace 
