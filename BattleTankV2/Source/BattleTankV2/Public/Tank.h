@@ -22,6 +22,7 @@ class BATTLETANKV2_API ATank : public APawn
 public:
 	void AimAt(FVector HitLocation);
 
+	// TODO remove onces firing is moved to aiming component 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Fireing")
 	float LaunchSpeed = 10000;
 

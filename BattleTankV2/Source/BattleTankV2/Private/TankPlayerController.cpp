@@ -14,14 +14,8 @@ void ATankPlayerController::BeginPlay()
 {
 	Super::BeginPlay();
 	auto AmingComponent = GetControlledTank()->FindComponentByClass<UTankAimingComponent>();
-	if (ensure(AmingComponent))
-	{
-		FoundAimingComponent(AmingComponent);
-	}
-	else
-	{
-		UE_LOG(LogTemp, Warning, TEXT("AmingComponent missing"));
-	}
+	if (!ensure(AmingComponent)) { return; }
+	FoundAimingComponent(AmingComponent);
 }
 
 ATank* ATankPlayerController::GetControlledTank() const
