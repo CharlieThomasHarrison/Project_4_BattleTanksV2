@@ -2,7 +2,6 @@
 
 #include "TankPlayerController.h"
 #include "TankAimingComponent.h"
-#include "Tank.h"
 
 void ATankPlayerController::Tick(float DeltaTime)
 {
@@ -13,24 +12,20 @@ void ATankPlayerController::Tick(float DeltaTime)
 void ATankPlayerController::BeginPlay()
 {
 	Super::BeginPlay();
-	auto AmingComponent = GetControlledTank()->FindComponentByClass<UTankAimingComponent>();
+	auto AmingComponent = GetPawn()->FindComponentByClass<UTankAimingComponent>();
 	if (!ensure(AmingComponent)) { return; }
 	FoundAimingComponent(AmingComponent);
 }
 
-ATank* ATankPlayerController::GetControlledTank() const
-{
-	return Cast<ATank>(GetPawn());
-}
-
 void ATankPlayerController::AimTowardsCrossHair()
 {
-	if (!ensure(GetControlledTank())) { return; }
+	auto AmingComponent = GetPawn()->FindComponentByClass<UTankAimingComponent>();
+	if (!ensure(AmingComponent)) { return; }
 
 	FVector HitLocation; // Out parameter 
 	if (GetSightRayHitLocation(HitLocation)) // Has "Side-effect" id going to Raytrace 
 	{
-		GetControlledTank()->AimAt(HitLocation);
+		AmingComponent->AimAt(HitLocation);
 	}
 }
 

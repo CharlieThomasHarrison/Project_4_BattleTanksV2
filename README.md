@@ -61,3 +61,5 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT56: BlueprintImplementableEvent Changed UI to be buillt from BP fuction from the c++ class
 * BT57: Using the ensure Assertion added ensure to key points in code to see insight to failing code
 * BT58: Dependency Mapping removeing #inculeds from certin scripts
+* BT59: Starting from green have tank turret and barrel moving in-line with aiming again
+* BT60: Aiming without the tank refactored tank, AI Tank and aimingcomponent code 	

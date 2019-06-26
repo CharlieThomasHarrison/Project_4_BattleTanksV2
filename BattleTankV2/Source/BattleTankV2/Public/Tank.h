@@ -11,7 +11,6 @@
 // Forward declarations
 class UTankBarrel;
 class UTankTurret;
-class UTankAimingComponent;
 class AProjectile;
 
 UCLASS()
@@ -20,11 +19,6 @@ class BATTLETANKV2_API ATank : public APawn
 	GENERATED_BODY()
 
 public:
-	void AimAt(FVector HitLocation);
-
-	// TODO remove onces firing is moved to aiming component 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Fireing")
-	float LaunchSpeed = 10000;
 
 	UFUNCTION(BlueprintCallable, Category = "Setup")
 	void Fire();
@@ -35,9 +29,6 @@ public:
 protected:
 
 	virtual void BeginPlay() override;
-	
-	UPROPERTY(BlueprintReadOnly)
-	UTankAimingComponent* TankAimingComponent = nullptr;
 
 private:
 	// Sets default values for this pawn's properties
