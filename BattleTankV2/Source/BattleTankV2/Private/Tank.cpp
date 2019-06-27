@@ -12,31 +12,4 @@ ATank::ATank()
 	PrimaryActorTick.bCanEverTick = false;
 }
 
-void ATank::BeginPlay()
-{
-	//test
-	Super::BeginPlay(); // Needed for Blueprint code
-
-}
-
-void ATank::Fire()
-{
-	if (!ensure(Barrel)) { return; }
-	bool IsReloaded = (FPlatformTime::Seconds() - LastFireTime) > ReloadTimeInSeconds;
-
-		if (IsReloaded)
-		{
-			if (CanTankFire)
-			{
-				auto Projectile = GetWorld()->SpawnActor<AProjectile>(
-					ProjectileBluePrint,
-					Barrel->GetSocketLocation(FName("Projectile")),
-					Barrel->GetSocketRotation(FName("Projectile"))
-					);
-
-				Projectile->LaunchProjectile(9999);
-				LastFireTime = FPlatformTime::Seconds();
-			}
-		}
-}
 
