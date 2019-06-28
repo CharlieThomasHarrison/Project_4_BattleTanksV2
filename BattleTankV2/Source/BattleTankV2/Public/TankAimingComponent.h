@@ -40,6 +40,11 @@ public:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Fireing")
 	float LaunchSpeed = 10000;
+
+	// TODO move to private for final release
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Setup")
+	TSubclassOf<AProjectile> ProjectileBluePrint;
+
 protected:
 
 	UPROPERTY(BlueprintReadOnly, Category = "State")
@@ -52,9 +57,6 @@ private:
 	UTankBarrel* Barrel = nullptr;
 	UTankTurret* Turret = nullptr;
 
-	
-	UPROPERTY(EditDefaultsOnly, Category = "Setup")
-	TSubclassOf<AProjectile> ProjectileBluePrint;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Fireing")
 	float ReloadTimeInSeconds = 3;
