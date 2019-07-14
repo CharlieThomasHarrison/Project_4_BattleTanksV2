@@ -35,7 +35,7 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT30: Clamp used to limit vaules to allow barrel to move up and down 
 * BT31: My creation of the Tank Turret Roation code 
 * BT32: final Commit of turret Roation cleaned up code and chnage tick on TankAimingComponent
-* BT33: Added Projectile C++ class and fireing abilty to Tank C++ classs resulting in print to log 
+* BT33: Added Projectile C++ class and fireing ability to Tank C++ classs resulting in print to log 
 * BT34: Basic spawning of projectile at the end of Barrel
 * BT35: Projectile Movement Components added to projectile class/BP and Tank now fireing Projectile at launch speed
 * BT36: Makeing AI Tanks fire added Fireing to all tanks aswell as reload timer and can fire bool
