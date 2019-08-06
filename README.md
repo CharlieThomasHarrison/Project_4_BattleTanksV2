@@ -65,3 +65,4 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT60: Aiming without the tank refactored tank, AI Tank and aimingcomponent code 	
 * BT61: Finshing Refactoring
 * BT61.5 Updated projectile code so that it wont crash game
+* BT62 : Adding tick Component back and fixed track response bug
