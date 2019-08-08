@@ -66,3 +66,4 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT61: Finshing Refactoring
 * BT61.5 Updated projectile code so that it wont crash game
 * BT62 : Adding tick Component back and fixed track response bug
+* BT63: Adding fuctioning reloading, Aiming and locked
