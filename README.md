@@ -65,6 +65,7 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT60: Aiming without the tank refactored tank, AI Tank and aimingcomponent code 	
 * BT61: Finshing Refactoring
 * BT61.5 Updated projectile code so that it wont crash game
-* BT62 : Adding tick Component back and fixed track response bug
+* BT62: Adding tick Component back and fixed track response bug
 * BT63: Adding fuctioning reloading, Aiming and locked
-* vv
+* BT64: Sideway counter force adding to stop tank from slipping sideways & Hit event for tank track added and print out responce
+* BT65: Avoiding Boolean Flags update trottle code in tank track and added damping the sideway and forward movment
