@@ -24,6 +24,7 @@ void ATankPlayerController::AimTowardsCrossHair()
 	if (!ensure(AmingComponent)) { return; }
 
 	FVector HitLocation; // Out parameter 
+	bool bGotHitLoaction = GetSightRayHitLocation(HitLocation);
 	if (GetSightRayHitLocation(HitLocation)) // Has "Side-effect" id going to Raytrace 
 	{
 		AmingComponent->AimAt(HitLocation);
@@ -43,9 +44,9 @@ bool ATankPlayerController::GetSightRayHitLocation(FVector& HitLoaction) const
 	if (GetLookDiration(ScreenLocation, LookDiraction))
 	{
 		// RayTrace along that look direction, and see whats is hit (limted range)
-		GetLookVectorHitLocation(LookDiraction, HitLoaction);
+		return GetLookVectorHitLocation(LookDiraction, HitLoaction);
 	}
-	return true;
+	return false;
 }
 
 bool ATankPlayerController::GetLookVectorHitLocation(FVector LookDiraction, FVector& HitLocation) const
