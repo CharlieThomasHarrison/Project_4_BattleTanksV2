@@ -70,3 +70,4 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT64: Sideway counter force adding to stop tank from slipping sideways & Hit event for tank track added and print out responce
 * BT65: Avoiding Boolean Flags update trottle code in tank track and added damping the sideway and forward movment
 * BT66: Improving Tank Aiming fixed tank turret roation to aim at point the fastest
+* BT67: Added AiTanks can only fire when aiming is locked as welll as added AiController blueprint and can change the AcceptanceRadius in-editor
