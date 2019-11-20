@@ -11,8 +11,9 @@ UENUM()
 enum class EFireingState : uint8
 {
 	Reloading,
-	Amining, 
-	Locked
+	Amining,
+	Locked,
+	OutOfAmmo
 };
 
 // Forward Declaration
@@ -35,7 +36,7 @@ public:
 
 	void AimAt(FVector HitLocation);
 
-	UFUNCTION(BlueprintCallable, Category = "Setup")
+	UFUNCTION(BlueprintCallable, Category = "Fireing")
 	void Fire();
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Fireing")
@@ -46,6 +47,9 @@ public:
 	TSubclassOf<AProjectile> ProjectileBluePrint;
 
 	EFireingState GetFireingState() const;
+
+	UFUNCTION(BlueprintCallable, Category = "Fireing")
+	int GetRoundsLeft() const;
 
 protected:
 
@@ -71,4 +75,6 @@ private:
 	double LastFireTime = 0;
 
 	FVector AimDirection;
+
+	int RoundsLeft = 3;
 };
