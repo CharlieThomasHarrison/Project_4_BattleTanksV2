@@ -72,3 +72,7 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT66: Improving Tank Aiming fixed tank turret roation to aim at point the fastest
 * BT67: Added AiTanks can only fire when aiming is locked as welll as added AiController blueprint and can change the AcceptanceRadius in-editor
 * BT67: Added OutOfAmmo state and fuction to player tank and ui for ammo count
+* BT68: Added Motor BP to game using tank components
+* BT69: Reimported mortor models with improvements
+* BT70: Reimported mortor models with improvements pt2
+* BT71: Updatesave
