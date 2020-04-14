@@ -3,6 +3,8 @@
 
 # Visual Studio 2015 database file
 *.VC.db
+BattleTankV2.VC.VC.opendb
+.vs/
 
 # Compiled Object files
 *.slo

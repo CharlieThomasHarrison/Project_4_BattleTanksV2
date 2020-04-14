@@ -76,3 +76,5 @@ Project made along side a Udemy corse (The Unreal Engine Developer Course - Lear
 * BT69: Reimported mortor models with improvements
 * BT70: Reimported mortor models with improvements pt2
 * BT71: Updatesave
+* BT72: Starter Content added to Gitignore
+* BT73: Deleted Starter content, moved material into core game files and updated gitgnore and removed second copy
